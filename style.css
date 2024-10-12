@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+html,body{
+    background-image: url("https://wallpaperbat.com/img/846543-instagram-hd-wallpaper-and-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+body{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#card{
+    height: 450px;
+    width: 320px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid black;
+    position: relative;
+}
+
+#storiyan{
+    height: 120px;
+    width: 100%;
+    padding:15px;
+    border-bottom: 1px solid #dadada;
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y:hidden;
+    
+}
+/* why we give this padding */
+
+#storiyan::-webkit-scrollbar{
+    display: none;
+}
+
+
+.story{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: linear-gradient(yellow,orange,pink,purple,blue);
+    padding: 3px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+   }
+
+.story img{
+  
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+}
